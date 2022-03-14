@@ -1,12 +1,17 @@
 class Solution:
-    def twoSum(self, nums: List[int], target: int) -> List[int]:
-    	"""
+    def two_sum(self, nums, target):
+	"""
 
-    	"""
-    	hashmap = {}
-    	for i in range (len(nums)):
-    		if (target - nums[i]) not in hashmap:
-    			hashmap[nums[i]] = i
-    		else:
-    			return [i, hashmap[target-nums[i]]]
-    			
+	Args:
+		nums:
+		target:
+
+	Returns:
+
+	"""
+	hashmap = {}
+	for i in range (len(nums)):
+		if (target - nums[i]) not in hashmap:
+			hashmap[nums[i]] = i
+		else:
+			return [i, hashmap[target-nums[i]]]
